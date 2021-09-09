@@ -1,0 +1,46 @@
+{
+  "name": "http-error-classes",
+  "version": "0.0.0",
+  "description": "HTTP error classes for a JS applications",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "clean-dist": "rm -rf ./dist",
+    "build": "npm run clean-dist && tsc",
+    "start": "node .",
+    "test": "jest ./src",
+    "lint": "eslint ./src",
+    "type-check": "tsc --noEmit",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlaanemaa/http-error-classes.git"
+  },
+  "keywords": [
+    "http",
+    "error",
+    "class"
+  ],
+  "author": "Taavi Laanemaa <taavi.laanemaa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tlaanemaa/http-error-classes/issues"
+  },
+  "homepage": "https://github.com/tlaanemaa/http-error-classes#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.1",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  }
+}
