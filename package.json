@@ -14,8 +14,8 @@
     "clean-dist": "rm -rf ./dist",
     "build": "npm run clean-dist && tsc",
     "start": "node .",
-    "test": "jest ./src",
-    "lint": "eslint ./src",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "type-check": "tsc --noEmit",
     "prepare": "npm run build"
   },
