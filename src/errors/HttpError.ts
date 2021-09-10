@@ -1,4 +1,4 @@
-export class HttpError<ContextType = unknown> extends Error {
+export class HttpError<ContextType> extends Error {
   public readonly name: string = "HttpError";
   public readonly statusCode: number;
 
