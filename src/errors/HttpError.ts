@@ -1,4 +1,5 @@
 export class HttpError<ContextType = unknown> extends Error {
+  public readonly name: string = "HttpError";
   public readonly statusCode: number;
 
   constructor(
