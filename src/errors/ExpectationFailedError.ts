@@ -1,8 +1,8 @@
 import { HttpError } from "./HttpError";
 
-export class ExpectationFailedError<
-  ContextType
-> extends HttpError<ContextType> {
+export class ExpectationFailedError<ContextType> extends HttpError<ContextType> {
+  public readonly name = "ExpectationFailedError";
+
   constructor(
     public readonly message: string = "Expectation Failed",
     public readonly context?: ContextType

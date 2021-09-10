@@ -1,8 +1,8 @@
 import { HttpError } from "./HttpError";
 
-export class NetworkAuthenticationRequiredError<
-  ContextType
-> extends HttpError<ContextType> {
+export class NetworkAuthenticationRequiredError<ContextType> extends HttpError<ContextType> {
+  public readonly name = "NetworkAuthenticationRequiredError";
+
   constructor(
     public readonly message: string = "Network Authentication Required",
     public readonly context?: ContextType
