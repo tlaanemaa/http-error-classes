@@ -1,6 +1,6 @@
 {
   "name": "http-error-classes",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "HTTP error classes for a JS applications",
   "main": "./dist/main.js",
   "types": "./dist/main.d.ts",
