@@ -28,10 +28,10 @@ const fibonacci = (n) => {
 Here we have an express error middleware that handles how errors get returned to the client. It's important to explicitly map the error to the returned object as HttpErrors, like regular Errors, contain the stack trace which should not be exposed.
 
 ```js
-const { HttpError, InternalServerErrorError } = require("http-error-classes");
+const { HttpError, InternalServerError } = require("http-error-classes");
 
 const errorHandlerMiddleware = (err, req, res, next) => {
-  const error = err instanceof HttpError ? err : new InternalServerErrorError();
+  const error = err instanceof HttpError ? err : new InternalServerError();
   res.status(error.status).send({
     message: error.message,
     context: error.context,

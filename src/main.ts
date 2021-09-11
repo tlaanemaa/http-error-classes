@@ -28,7 +28,7 @@ export { PreconditionRequiredError } from "./errors/PreconditionRequiredError";
 export { TooManyRequestsError } from "./errors/TooManyRequestsError";
 export { RequestHeaderFieldsTooLargeError } from "./errors/RequestHeaderFieldsTooLargeError";
 export { UnavailableForLegalReasonsError } from "./errors/UnavailableForLegalReasonsError";
-export { InternalServerErrorError } from "./errors/InternalServerErrorError";
+export { InternalServerError } from "./errors/InternalServerError";
 export { NotImplementedError } from "./errors/NotImplementedError";
 export { BadGatewayError } from "./errors/BadGatewayError";
 export { ServiceUnavailableError } from "./errors/ServiceUnavailableError";

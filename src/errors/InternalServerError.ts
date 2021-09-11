@@ -1,7 +1,7 @@
 import { HttpError } from "./HttpError";
 
-export class InternalServerErrorError<ContextType> extends HttpError<ContextType> {
-  public readonly name = "InternalServerErrorError";
+export class InternalServerError<ContextType> extends HttpError<ContextType> {
+  public readonly name = "InternalServerError";
 
   constructor(
     public readonly message: string = "Internal Server Error",
