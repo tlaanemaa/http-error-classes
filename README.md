@@ -25,7 +25,7 @@ const fibonacci = (n) => {
 
 ### Filtering for HttpErrors
 
-Here we have an express error middleware that handles how errors get returned to the client. It's important to explicitly map the error to the returned object as HttpErrors, like regular Errors, contain the stack trace which should not be exposed.
+Here we have an express error middleware that handles how errors get returned to the client. It's important to explicitly map the error to the returned object because HttpErrors, like regular Errors, contain the stack trace which should not be exposed.
 
 ```js
 const { HttpError, InternalServerError } = require("http-error-classes");
