@@ -38,7 +38,7 @@ export class ${className}<ContextType> extends HttpError<ContextType> {
  * Loop over the codes and generate TS classes for them
  */
 errorCodes.forEach(([code, name]) => {
-  const className = name.replace(/\W/g, "").concat("Error");
+  const className = name.replace(/\W|Error$/g, "").concat("Error");
   fs.writeFile(
     `./src/errors/${className}.ts`,
     createClassFileContent(code, name, className)
