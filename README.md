@@ -1,6 +1,6 @@
 # HTTP error classes
 
-This package provides error classes for every HTTP 4xx and 5xx error code. This makes it easy to throw HTTP errors in your application without having to build the classes yourself for that, just a small time win.
+This package provides error classes for every HTTP 4xx and 5xx error code. This makes it easy to throw HTTP errors in your application without having to build the classes yourself for that, just a small win.
 
 You can also check if an error is a HttpError by checking if it's an instance of the `HttpError` class from this package, all errors here extend that class.
 
@@ -10,7 +10,7 @@ The error classes allow you to provide a message and a context object, status co
 
 ### Throwing an error with some context
 
-Here we have a function to calculate the fibonacci value at `n` steps. If the `n` we receive is not a number then we'll throw a `BadRequestError` and give the `n` we received as context.
+Here we have a function to calculate the Fibonacci value at `n` steps. If the `n` we receive is not a number then we'll throw a `BadRequestError` and give the `n` we received as context.
 
 ```js
 const { BadRequestError } = require("http-error-classes");
