@@ -1,5 +1,7 @@
 # HTTP error classes
 
+[![Node.js CI](https://github.com/tlaanemaa/http-error-classes/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/tlaanemaa/http-error-classes/actions/workflows/node.js.yml)
+
 This package provides error classes for every HTTP 4xx and 5xx error code. This makes it easy to throw HTTP errors in your application without having to build the classes yourself for that, just a small win.
 
 You can also check if an error is a HttpError by checking if it's an instance of the `HttpError` class from this package, all errors here extend that class.
